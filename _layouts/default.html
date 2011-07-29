@@ -4,20 +4,19 @@
         <meta charset="UTF-8">
         <title>{{ page.title }}</title>
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    </style>
-</head>
-<body>
-    <div id="container">
-        <div id="title">
-            <a href="/">Krzysztof Grodzicki</a>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <a href="/">Krzysztof Grodzicki</a>
+            </div>
+            <div class="hrBox"></div>
+            {{ content }}
+            <div class="hrBox"></div>
+            {% include footer.html %}
         </div>
-        <div class="hrBox"></div>
-        {{ content }}
-        <div class="hrBox"></div>
-        {% include footer.html %}
-    </div>
 
-    {% include scripts.html %}
-</body>
+        {% include scripts.html %}
+    </body>
 </html>
 
