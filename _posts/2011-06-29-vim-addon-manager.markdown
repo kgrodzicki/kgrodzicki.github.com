@@ -8,7 +8,7 @@ type: blog
 Recently I have changed my vim plugin configuration from [Pathogen](http://bit.ly/qA53WP) to 
 [Vim Addon Manager](http://bit.ly/qAu2DM). After few days of using it, I can say it is pretty awesome.
 With VAM I can simply use profiles, which I was really missing in my older config. For example 
-``V=scala vim`` run vim with scala profile.
+``V=scala vim`` run vim with scala profile. You can run also more than one profile e.g.: ``V=scala,java vim``.
 Example profiles configuration:
 
 
