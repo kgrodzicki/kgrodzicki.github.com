@@ -3,6 +3,12 @@ layout: default
 title: Krzysztof Grodzicki
 ---
 
+<h3>Blog</h3>
+<ul class="posts">
+    {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
 <h3>About</h3>
 <p>
 Software developer lives in Oslo. Consultant at <a href="http://iterate.no">Iterate AS</a>.
