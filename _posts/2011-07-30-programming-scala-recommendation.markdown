@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Programming Scala - recomendation
+title: Programming Scala - recommendation
 categories: scala
 type: blog
 ---
 
-I wrote this recomendation about one year ago on linkedin. I hope it will be still helpful.
+I wrote this recommendation about one year ago on linkedin. I hope it will be still helpful.
 
 Book title: [Programming Scala: Tackle Multi-Core Complexity on the Java Virtual Machine](ihttp://amzn.to/r0uRU3).
 
