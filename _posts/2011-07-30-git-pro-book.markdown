@@ -49,4 +49,29 @@ git log
 - %cr Committer date, relative
 - %s Subject
 
+`git log --pretty=format:"%h %s" --graph` - format the log and show the graph
+
+### More options for `git log`:
+
+- -p Show the patch introduced with each commit.
+- --stat Show statistics for files modified in each commit.
+- --shortstat Display only the changed/insertions/deletions line from the --stat command.
+- --name-only Show the list of files modified after the commit information.
+- --name-status Show only names and status of changed files. See the description of the `--diff-filter` option on what the status letters mean.
+- --abbrev-commit Show only the first few characters of the SHA-1 checksum instead of all.
+- --relative-date Shows dates relative to the current time, e.g. "2 hours ago".
+- --graph Display an ASCII graph of the branch and merge history beside the log output.
+- --pretty Show commits in an alternate format.
+
+`git log --since=2.weeks` - limit the list of commits made int he last two weeks.
+
+### Options for limitg the log aoutput:
+
+- -(n) Show only the last n commits
+- --since, --after Limit the commits to those made after the specified date.
+- --until, --before Limit the commits to those made before the specified date.
+- --author Only show commits in which the author entry matches the specified string.
+- --committer Only show commits in which the committer entry matches the specified string.
+
+`git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges -- t` - more advanced example of limiting log output.
 
