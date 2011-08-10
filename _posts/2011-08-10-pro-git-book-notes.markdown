@@ -147,7 +147,9 @@ git checkout
 git merge
 ---------
 
-`git merge test` - merge `test` branch into current branch.
+`git merge test` - merge `test` branch into current branch. Do not generate a merge commit if the merge resolved as a fast-forward, only update the branch pointer. This is the default behavior of `git-merge`.
+
+`git merge --no-off test` - almost the same as command above, but with `--no-ff` generate a merge commit even if the merge resolved as a `fast-forward`.
 
 `git mergetool` - run merge conflict resolution tools to resolve merge conflicts.
 
