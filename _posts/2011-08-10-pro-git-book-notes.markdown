@@ -134,11 +134,21 @@ git branch
 
 `git branch -d newTest` - delete branch `newTest`.
 
+`git branch --merged` - show all branches that are already merged into the current branch.
+
+`git branch --no-merged` - show all branches that contains work you haven't yet merged.
+
 git checkout
 ------------
 `git checkout newTest` - change the current branch to `newTest`.
 
 `git checkout -b newTest` - create new branch `newTest` and set it as current working branch.
 
+git merge
+---------
+
+`git merge test` - merge `test` branch into current branch.
+
+`git mergetool` - run merge conflict resolution tools to resolve merge conflicts.
 
 NOTE: to be continued...
