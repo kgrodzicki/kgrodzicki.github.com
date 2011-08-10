@@ -1,0 +1,144 @@
+---
+layout: default
+title: Pro Git Notes
+categories: git
+type: blog
+---
+
+Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
+
+git commit
+----------
+`git commit -am "msg"` - automatically "add" changes from all known files (i.e. all files that are already listed in the index) and to automatically "rm" files in the index that have been removed from the working tree, and then perform the actual commit. `-m` Use the given `msg` as the commit message.
+
+`git commit --amend` - change your last commit. Takes your staging area and uses it for the commit. Use it to change your last commit.
+
+git push
+--------
+`git push origin` - push to `origin` repository.
+
+`git push origin --tags` - push to `origin` including all tags.
+
+git diff
+--------
+`git diff` - check what you've changed but not yet staged.
+
+`git diff --cached` - compare your staged changes to your last commit.
+
+git rm
+------
+`git rm test.c` - remove the the file.
+
+`git rm --cached test.c` - remove the file from staging area but keep it file system.
+
+git mv
+------
+`git mv file_from file_to` - move the file.
+
+git log
+-------
+
+`git log` - view the commit history.
+
+`git log -p 2` - shows the diff introduced in each commit limited the output to the only last two entries.
+
+`git log --stat` - show some abbreviated stats for each commit.
+
+`git log --pretty=oneline` - change the log output to show it in one line each.
+
+`git log --pretty=format:"%h - %an, %ar : %s"` - format the output using options like:
+- `%H` Commit hash
+- `%h` Abbreviated commit hash
+- `%T` Tree hash
+- `%t` Abbreviated tree hash
+- `%P` Parent hashes
+- `%p` Abbreviated parent hashes
+- `%an` Author name
+- `%ae` Author e-mail
+- `%ad` Author date (format respects the –date= option)
+- `%ar` Author date, relative
+- `%cn` Committer name
+- `%ce` Committer email
+- `%cd` Committer date
+- `%cr` Committer date, relative
+- `%s` Subject
+
+`git log --pretty=format:"%h %s" --graph` - format the log and show the graph
+
+### More options for `git log`:
+
+- `-p` Show the patch introduced with each commit.
+- `--stat` Show statistics for files modified in each commit.
+- `--shortstat` Display only the changed/insertions/deletions line from the --stat command.
+- `--name-only` Show the list of files modified after the commit information.
+- `--name-status` Show only names and status of changed files. See the description of the `--diff-filter` option on what the status letters mean.
+- `--abbrev-commit` Show only the first few characters of the SHA-1 checksum instead of all.
+- `--relative-date` Shows dates relative to the current time, e.g. "2 hours ago".
+- `--graph Display` an ASCII graph of the branch and merge history beside the log output.
+- `--pretty` Show commits in an alternate format.
+
+`git log --since=2.weeks` - limit the list of commits made int he last two weeks.
+
+### Options for limitg the log aoutput:
+
+- `-(n)` Show only the last n commits
+- `--since`, `--after` Limit the commits to those made after the specified date.
+- `--until`, `--before` Limit the commits to those made before the specified date.
+- `--author` Only show commits in which the author entry matches the specified string.
+- `--committer` Only show commits in which the committer entry matches the specified string.
+
+`git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges -- t` - more advanced example of limiting log output.
+
+`gitk` - show the visual `git log`.
+
+git checkout
+------------
+`git checkout -- test.c` - revert your changes to last commited version.
+
+git remote
+----------
+`git remote -v` - List the remote repositores with URL and shortname. `-v` - e a little more verbose and show remote url after name. NOTE: This must be placed between `remote` and `subcommand`.
+
+`git remote add test git://github.com/kgrodzicki/test.git` - add remote repository.
+
+`git remote show origin` - inspecting `origin` repository.
+
+`git remote rename test newName` - rename the remote repository.
+
+`git remote rm test` - remove remote repository.
+
+git fetch
+---------
+
+`git fetch test` - fetch changes form `test` repository.
+
+git tag
+-------
+`git tag` - list tags.
+
+`git tag -l 'v1.4.2.*'` - show the tags started from `v1.4.2.`.
+
+`git tag -a v1.4 -m 'my version 1.4'` - create annotated tag.
+
+`git tag -s v1.5 -m 'my signed 1.5 tag'` - create signed tag.
+
+`git tag v1.4-1w` - create lightweight tag.
+
+`git tag -v v1.4.2.1` - verify the `v1.4.2.1` tag.
+
+`git tag -a v1.2 checksum` - create the tag for specific commitd.
+
+git branch
+----------
+`git branch newTest` - create new `newTest` branch.
+
+`git branch -d newTest` - delete branch `newTest`.
+
+git checkout
+------------
+`git checkout newTest` - change the current branch to `newTest`.
+
+`git checkout -b newTest` - create new branch `newTest` and set it as current working branch.
+
+
+NOTE: to be continued...
