@@ -152,5 +152,3 @@ git merge
 `git merge --no-off test` - almost the same as command above, but with `--no-ff` generate a merge commit even if the merge resolved as a `fast-forward`.
 
 `git mergetool` - run merge conflict resolution tools to resolve merge conflicts.
-
-NOTE: to be continued...
