@@ -49,7 +49,9 @@ about SI e.g., “Pro Spring Integration” from Apress. It covers contemporary 
 and real-world examples, facing the real problems. Another important thing is community 
 which is really helpful and eager to solve your problems fast.
 
-* __Low Coupling__ - Example by Oleg Zhurakousky: 
+* __Low Coupling__ - 
+// Add some general info about it
+Example by Oleg Zhurakousky: 
 > _"In SI we have Channel as a first class citizen. In all other frameworks it is mentioned only as an internal implementation not exposed to the end-user._
 >  * _Channels is what enforces the decoupling between producers and consumers._
 >  * _Channels is what's allowing us to manage message-exchange protocols. From throttling to parallelism all is accomplished via channels._
