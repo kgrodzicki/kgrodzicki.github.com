@@ -81,12 +81,16 @@ Mark Fisher about GUI designer:
 
 #### Disadvantages:
 * __New technology__ - tree years on the market might not be enough for the bigger companies.
-* __Missing some adapters__ like ssh, shttp. Lack of the many adapters comparing to e.g., MuleESB. Always you can i
+* __Missing some adapters__ like ssh, shttp. Lack of the many adapters comparing to e.g., [MuleESB](http://bit.ly/ohrEq4). Always you can i
 fill JIRA for SI if you see some functionality which is crucial for you and can be used by community.
 
 Is the Spring Integration framework for you?
 You have to answer this question by yourself. As you can see SI is lightweight, 
 powerful technology build on the proven platform which you can use to model ESB which fits your needs.
+
+Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http://bit.ly/p6DPTP) project.
+
+Any comments? Let me know on Twitter @kgrodzicki.
 
 [1]: http://en.wikipedia.org/wiki/Enterprise_application_integration
 [2]: http://www.eaipatterns.com/](http://www.eaipatterns.com/
