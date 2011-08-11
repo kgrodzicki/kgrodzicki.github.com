@@ -5,9 +5,9 @@ categories: git
 type: blog
 ---
 
-This is a short review of the spring integration framework(SI)[^spring]. 
-To understand this article you should know what is the Enterprise Application Integration(EIP). 
-If you are not familiar with EIP please refer to wikipedia[7] or SI home page[6]. 
+This is a short review of the spring integration framework(SI)[^si]. 
+To understand this article you should know what is the Enterprise Application Integration(EAI). 
+If you are not familiar with EIP please refer to wikipedia[^eai] or SI home page[^si]. 
 You can find there documentation, reference manual, articles, podcasts and much more.
 
 What is the place of SI in SOA? Tom McCuch explains this in one of his comment:
@@ -24,24 +24,22 @@ What is the place of SI in SOA? Tom McCuch explains this in one of his comment:
 #### At first advantages:
 
 * __Implements proven patterns__ - The SI team didn’t invent the wheel again. The whole architecture 
-and solutions in SI are based on well-known Enterprise Integration Patterns[2]. 
+and solutions in SI are based on well-known Enterprise Integration Patterns[^eip]. 
   For example [Service Activator pattern](http://bit.ly/riOKGt):
   <script src="https://gist.github.com/1139466.js?file=gistfile1.xml">
   </script>
 
 * __Lightweight, maintainable, easy debugging and testable code__ - SI is based on the Spring programming model which gives you possibility to:
+    * develop code using POJO approacch - There is rarely any need to couple your code with SI API.
+    * unit testability and system testing support is provided by framework, you can do it without requiring deployment to your application server or connecting to other enterprise infrastructure.
 
-  * develop code using POJO approacch - There is rarely any need to couple your code with SI API.
-  * unit testability and system testing support is provided by framework, you can do it without i
-  requiring deployment to your application server or connecting to other enterprise infrastructure.
+    Sample test configuration:
+    <script src="https://gist.github.com/1139498.js?file=ServiceActivatorTest-context.xml">
+    </script>
 
-  Sample test configuration:
-  <script src="https://gist.github.com/1139498.js?file=ServiceActivatorTest-context.xml">
-  </script>
-
-  And test suite:
-  <script src="https://gist.github.com/1139498.js?file=ServiceActivatorTest.scala">
-  </script>
+    And test suite:
+    <script src="https://gist.github.com/1139498.js?file=ServiceActivatorTest.scala">
+    </script>
 
 * __Documentation__ - SI has good documentation with practical examples that will help 
 you understand channels, adapters, routers etc. You can find also very good books 
@@ -57,7 +55,7 @@ By Oleg Zhurakousky:
 >  * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
 
 * __Model complex solutions__ - using SI you are able to model complex solutions using various technologies 
-like EJB, RMI, AMQP etc. in one place. [3]. Even integration with [scala Akka](http://bit.ly/rtkXQ8) is pretty straightforward.
+like EJB, RMI, AMQP etc. in one place[^dsblog]. Even integration with [scala Akka](http://bit.ly/rtkXQ8) is pretty straightforward.
 
 * __Adapters for legacy system__ - possible adapters for legacy systems like an old mainframe 
 application whose input/output are batch files deposited on some FTP endpoint. Writing your own adapters in most cases are easy and straightforward.
@@ -66,7 +64,7 @@ application whose input/output are batch files deposited on some FTP endpoint. W
 SI has the ability to launch Spring Batch jobs via messeging, 
 allowing for event-driven batch process. In addition, SI can be used to scale 
 out Spring Batch using partitioning. This provides the ability to partition big 
-batch jobs over many nodes using message channels as the coordination fabric[8].
+batch jobs over many nodes using message channels as the coordination fabric[^psi].
 
 * __GUI designer in SpringSource Tool Suite__ - Simple designer will help you with fast modelling of flows and let you visualize your configuration file adhoc.
 Mark Fisher about GUI designer:
@@ -78,7 +76,7 @@ Mark Fisher about GUI designer:
 > _good for configuration (although IMHO it's NOT good at all for coding imperative logic like when/otherwise_
 > _or try/catch!), and we made sure that the editor does not interfere in any way with the developer's ability to read/understand/modify that XML.”_
 
-  For quick introduction refer to Refcards: [Eclipse Tools for Spring: The SpringSource Tool Suite](http://bit.ly/pbmlZr)
+    For quick introduction refer to Refcards: [Eclipse Tools for Spring: The SpringSource Tool Suite](http://bit.ly/pbmlZr)
 
 #### Disadvantages:
 * __New technology__ - tree years on the market might not be enough for the bigger companies.
@@ -93,13 +91,16 @@ Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http:/
 
 Any comments? Let me know on Twitter @kgrodzicki.
 
-[1]: http://en.wikipedia.org/wiki/Enterprise_application_integration
-[2]: http://www.eaipatterns.com/](http://www.eaipatterns.com/
-[3]: http://www.digitalsanctum.com/2010/08/31/using-rabbitmq,-spring-amqp-and-spring-integration/
-[4]: http://forum.springsource.org/showthread.php?109838-Tips-for-article-about-Spring-Integration
-[5]: http://www.infoq.com/articles/Spring-Integration-Joshua-Long
-[6]: http://www.springsource.org/spring-integration
-[7]: http://en.wikipedia.org/wiki/Enterprise_application_integration
-[8]: Pro Spring Integration Josh Long , Dr. Mark Lui , Mario Gray , Andy Chan
+[^eai]: http://en.wikipedia.org/wiki/Enterprise_application_integration
 
-[^spring] lalala
+[^eip]: http://www.eaipatterns.com/](http://www.eaipatterns.com/
+
+[^dsblog]: http://www.digitalsanctum.com/2010/08/31/using-rabbitmq,-spring-amqp-and-spring-integration/
+
+[^siftips]: http://forum.springsource.org/showthread.php?109838-Tips-for-article-about-Spring-Integration
+
+[^sijl]: http://www.infoq.com/articles/Spring-Integration-Joshua-Long
+
+[^si]: http://www.springsource.org/spring-integration
+
+[^psi]: Pro Spring Integration Josh Long , Dr. Mark Lui , Mario Gray , Andy Chan
