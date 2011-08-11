@@ -45,7 +45,7 @@ and solutions in SI are based on well-known Enterprise Integration Patterns[2].
 
 * __Documentation__ - SI has good documentation with practical examples that will help 
 you understand channels, adapters, routers etc. You can find also very good books 
-about SI e.g., “Pro Spring Integration” from Apress. It covers contemporary technologies 
+about SI e.g., [“Pro Spring Integration”](http://bit.ly/pu2ul4) from Apress. It covers contemporary technologies 
 and real-world examples, facing the real problems. Another important thing is community 
 which is really helpful and eager to solve your problems fast.
 
