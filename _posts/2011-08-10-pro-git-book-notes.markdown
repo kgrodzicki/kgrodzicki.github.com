@@ -3,6 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
+updated: 22 Aug 2011
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -126,7 +127,7 @@ git tag
 
 `git tag -v v1.4.2.1` - verify the `v1.4.2.1` tag.
 
-`git tag -a v1.2 checksum` - create the tag for specific commitd.
+`git tag -a v1.2 checksum` - create the tag for specific commit.
 
 git branch
 ----------
