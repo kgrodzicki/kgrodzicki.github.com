@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Spring Integration as building block for SOA
-categories: git
+categories: soa
 type: blog
 ---
 
