@@ -30,7 +30,7 @@ and solutions in SI are based on well-known Enterprise Integration Patterns[^eip
   </script>
 
 * __Lightweight, maintainable, easy debugging and testable code__ - SI is based on the Spring programming model which gives you possibility to:
-    * develop code using POJO approacch - There is rarely any need to couple your code with SI API.
+    * develop code using POJO approach - There is rarely any need to couple your code with SI API.
     * unit testability and system testing support is provided by framework, you can do it without requiring deployment to your application server or connecting to other enterprise infrastructure.
 
     Sample test configuration:
@@ -62,7 +62,7 @@ application where input/output are batch files deposited on some FTP endpoint. W
 details check out "Pro Spring Integration" chapter 15[^psi].
 
 * __Easy integration with other spring projects__  like Spring Batch, Spring AMQP(RabbitMQ). 
-SI has the ability to launch Spring Batch jobs via messeging, 
+SI has the ability to launch Spring Batch jobs via messaging, 
 allowing for event-driven batch process. In addition, SI can be used to scale 
 out Spring Batch using partitioning. This provides the ability to partition big 
 batch jobs over many nodes using message channels as the coordination fabric[^psi].
