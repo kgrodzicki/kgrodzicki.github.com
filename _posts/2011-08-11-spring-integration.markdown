@@ -79,6 +79,11 @@ Mark Fisher about GUI designer:
 
     For quick introduction refer to Refcards: [Eclipse Tools for Spring: The SpringSource Tool Suite](http://bit.ly/pbmlZr)
 
+* __Spring Integration Scala DSL__ - domain-specific language for Scala[^dsl]. Example:
+
+    <script src="https://gist.github.com/1141786.js?file=DslDemo.scala">
+    </script>
+
 #### Disadvantages:
 * __New technology__ - tree years on the market might not be enough for the bigger companies.
 * __Missing adapters__ like ssh, shttp. Lack of the many adapters comparing to e.g., [MuleESB](http://bit.ly/ohrEq4). Always you can i
@@ -107,3 +112,5 @@ Any comments? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
 [^psi]: Pro Spring Integration Josh Long , Dr. Mark Lui , Mario Gray , Andy Chan
 
 [^tmc]: [http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115](http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115)
+
+[^dsl]: [https://github.com/SpringSource/spring-integration-scala](some://github.com/SpringSource/spring-integration-scala)
