@@ -90,7 +90,7 @@ powerful technology build on the proven platform which you can use to model ESB 
 
 Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http://bit.ly/p6DPTP) project.
 
-Any comments? Let me know on Twitter @kgrodzicki.
+Any comments? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
 
 [^eai]: [http://en.wikipedia.org/wiki/Enterprise_application_integration](http://en.wikipedia.org/wiki/Enterprise_application_integration)
 
