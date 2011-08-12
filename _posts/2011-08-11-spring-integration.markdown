@@ -113,4 +113,4 @@ Any comments? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
 
 [^tmc]: [http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115](http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115)
 
-[^dsl]: [https://github.com/SpringSource/spring-integration-scala](some://github.com/SpringSource/spring-integration-scala)
+[^dsl]: [https://github.com/SpringSource/spring-integration-scala](https://github.com/SpringSource/spring-integration-scala)
