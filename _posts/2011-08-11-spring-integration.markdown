@@ -55,7 +55,7 @@ By Oleg Zhurakousky:
 >  * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
 
 * __Model complex solutions__ - using SI you are able to model complex solutions using various technologies 
-like EJB, RMI, AMQP etc. in one place[^dsblog]. Even integration with [scala Akka](http://bit.ly/rtkXQ8) is pretty straightforward.
+like EJB, RMI, AMQP etc. in one place[^dsblog].
 
 * __Adapters for legacy system__ - possible adapters for legacy systems like an old mainframe 
 application where input/output are batch files deposited on some FTP endpoint. Writing your own adapters in most cases are easy and straightforward. For more 
