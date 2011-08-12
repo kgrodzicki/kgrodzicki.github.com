@@ -41,6 +41,10 @@ body {
 #title a.extra:hover {
     color: black;
 }
+#updated {
+    font-size: 0.8em;
+    color: #404040;
+}
 .hrBox {
     border: 0px;
     width: 100%;

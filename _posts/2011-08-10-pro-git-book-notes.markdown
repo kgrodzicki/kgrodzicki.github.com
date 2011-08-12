@@ -3,6 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
+updated: 12 Aug 2011
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -12,6 +13,13 @@ git commit
 `git commit -am "msg"` - automatically "add" changes from all known files (i.e. all files that are already listed in the index) and to automatically "rm" files in the index that have been removed from the working tree, and then perform the actual commit. `-m` Use the given `msg` as the commit message.
 
 `git commit --amend` - change your last commit. Takes your staging area and uses it for the commit. Use it to change your last commit.
+
+git reset
+---------
+
+`git reset HEAD^1` - unstage last commit.
+
+`git reset --hard master` - reset your branch to where `master` is now.
 
 git push
 --------
@@ -126,7 +134,7 @@ git tag
 
 `git tag -v v1.4.2.1` - verify the `v1.4.2.1` tag.
 
-`git tag -a v1.2 checksum` - create the tag for specific commitd.
+`git tag -a v1.2 checksum` - create the tag for specific commit.
 
 git branch
 ----------
