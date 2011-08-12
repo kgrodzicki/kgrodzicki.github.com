@@ -5,10 +5,10 @@ categories: git
 type: blog
 ---
 
-This is a short review of the spring integration framework(SI)[^si]. 
-To understand this article you should know what is the Enterprise Application Integration(EAI). 
-If you are not familiar with EIP please refer to wikipedia[^eai] or SI home page[^si]. 
-You can find there documentation, reference manual, articles, podcasts and much more.
+This is a short review of the Spring Integration Framework(SI)[^si]. 
+To understand this article you should be familiar with Enterprise Application Integration(EAI). 
+If you are not please refer to wikipedia[^eai] or SI home page[^si]. 
+You will find there documentation, reference manual, articles, podcasts and much more.
 
 What is the place of SI in SOA? Tom McCuch explains this in one of his comment[^tmc]:
 > _"SOA is an architectural pattern. A pattern, by definition, is the encapsulation_
