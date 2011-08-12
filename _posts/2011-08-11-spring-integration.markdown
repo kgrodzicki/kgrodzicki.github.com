@@ -10,7 +10,7 @@ To understand this article you should know what is the Enterprise Application In
 If you are not familiar with EIP please refer to wikipedia[^eai] or SI home page[^si]. 
 You can find there documentation, reference manual, articles, podcasts and much more.
 
-What is the place of SI in SOA? Tom McCuch explains this in one of his comment:
+What is the place of SI in SOA? Tom McCuch explains this in one of his comment[^tmc]:
 > _"SOA is an architectural pattern. A pattern, by definition, is the encapsulation_
 > _of a complex system into a reusable component. Patterns are meant to describe_
 > _"building blocks" for YOUR solution - they are not meant to be solutions in of_
@@ -58,7 +58,8 @@ By Oleg Zhurakousky:
 like EJB, RMI, AMQP etc. in one place[^dsblog]. Even integration with [scala Akka](http://bit.ly/rtkXQ8) is pretty straightforward.
 
 * __Adapters for legacy system__ - possible adapters for legacy systems like an old mainframe 
-application whose input/output are batch files deposited on some FTP endpoint. Writing your own adapters in most cases are easy and straightforward.
+application where input/output are batch files deposited on some FTP endpoint. Writing your own adapters in most cases are easy and straightforward. For more 
+details check out "Pro Spring Integration" chapter 15[^psi].
 
 * __Easy integration with other spring projects__  like Spring Batch, Spring AMQP(RabbitMQ). 
 SI has the ability to launch Spring Batch jobs via messeging, 
@@ -91,16 +92,18 @@ Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http:/
 
 Any comments? Let me know on Twitter @kgrodzicki.
 
-[^eai]: http://en.wikipedia.org/wiki/Enterprise_application_integration
+[^eai]: [http://en.wikipedia.org/wiki/Enterprise_application_integration](http://en.wikipedia.org/wiki/Enterprise_application_integration)
 
-[^eip]: http://www.eaipatterns.com/](http://www.eaipatterns.com/
+[^eip]: [http://www.eaipatterns.com/](http://www.eaipatterns.com/)
 
-[^dsblog]: http://www.digitalsanctum.com/2010/08/31/using-rabbitmq,-spring-amqp-and-spring-integration/
+[^dsblog]: [http://www.digitalsanctum.com/2010/08/31/using-rabbitmq,-spring-amqp-and-spring-integration/](http://www.digitalsanctum.com/2010/08/31/using-rabbitmq,-spring-amqp-and-spring-integration/)
 
-[^siftips]: http://forum.springsource.org/showthread.php?109838-Tips-for-article-about-Spring-Integration
+[^siftips]: [http://forum.springsource.org/showthread.php?109838-Tips-for-article-about-Spring-Integration](http://forum.springsource.org/showthread.php?109838-Tips-for-article-about-Spring-Integration)
 
-[^sijl]: http://www.infoq.com/articles/Spring-Integration-Joshua-Long
+[^sijl]: [http://www.infoq.com/articles/Spring-Integration-Joshua-Long](http://www.infoq.com/articles/Spring-Integration-Joshua-Long)
 
-[^si]: http://www.springsource.org/spring-integration
+[^si]: [http://www.springsource.org/spring-integration](http://www.springsource.org/spring-integration)
 
 [^psi]: Pro Spring Integration Josh Long , Dr. Mark Lui , Mario Gray , Andy Chan
+
+[^tmc]: [http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115](http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115)
