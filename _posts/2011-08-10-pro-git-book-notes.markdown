@@ -18,6 +18,7 @@ git reset
 ---------
 
 `git reset HEAD^1` - unstage last commit.
+
 `git reset --hard master` - reset your branch to where `master` is now.
 
 git push
