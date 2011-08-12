@@ -90,7 +90,7 @@ Mark Fisher about GUI designer:
 fill JIRA for SI if you see some functionality which is crucial for you and can be used by community.
 
 Is the Spring Integration framework for you?
-You have to answer this question by yourself. As you can see SI is lightweight, 
+You have to answer this question by yourself. SI is lightweight, 
 powerful technology build on the proven platform which you can use to model ESB which fits your needs.
 
 Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http://bit.ly/p6DPTP) project.
