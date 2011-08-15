@@ -6,11 +6,24 @@ type: blog
 ---
 
 This is a short review of the Spring Integration Framework(SI)[^si]. 
-To understand this article you should be familiar with Enterprise Application Integration(EAI). 
-If you are not please refer to wikipedia[^eai] or SI home page[^si]. 
-You will find there documentation, reference manual, articles, podcasts and much more.
+To understand this article you should be familiar with Enterprise Application Integration(EAI) and have
+basic understanding of Enterprise Integration Patterns(EIP)[^eip].
+For those new to EAI or EIP:
 
-What is the place of SI in SOA? Tom McCuch explains this in one of his comment[^tmc]:
+* _EAI_ is an architectural approach for integrate data, services across the enterprise. EAI simplify and
+automate business process without requiring comprehensive changes in existing applications and data structures[^psi].
+
+* _EIP_ is set of integration patterns. EIP helps developers and architects describe and develop robust integration solutions[^eip].
+
+For those new to SI, definition from project home page[^si]:
+> "_Spring Integration_ provides an extension of the Spring programming model to support the well-known Enterprise 
+> Integration Patterns. It enables lightweight messaging within Spring-based applications and supports integration 
+> with external systems via declarative adapters. Those adapters provide a higher-level of abstraction over Spring's 
+> support for remoting, messaging, and scheduling. Spring Integration's primary goal is to provide a simple model 
+> for building enterprise integration solutions while maintaining the separation of concerns that is 
+> essential for producing maintainable, testable code."
+
+What is the place of SI in Service Orineted Architecture(SOA)? Tom McCuch explains this in one of his comment[^tmc]:
 > _"SOA is an architectural pattern. A pattern, by definition, is the encapsulation_
 > _of a complex system into a reusable component. Patterns are meant to describe_
 > _"building blocks" for YOUR solution - they are not meant to be solutions in of_
@@ -19,12 +32,15 @@ What is the place of SI in SOA? Tom McCuch explains this in one of his comment[^
 > _shelf products that aim to control it. This is where the big vendors have all gone wrong with_
 > _SOA - and where SpringSource, yet again, has gotten it right with Spring Integration."_
 
+For more information refer to wikipedia[^eai] or SI home page[^si].
+You will find there documentation, reference manual, articles, podcasts and much more.
+
 ### Lets take a look on some advantages and disadvantages of the SI.
 
 #### At first advantages:
 
 * __Implements proven patterns__ - The SI team didn’t invent the wheel again. The whole architecture 
-and solutions in SI are based on well-known Enterprise Integration Patterns[^eip]. 
+and solutions in SI are based on Enterprise Integration Patterns[^eip]. 
   For example [Service Activator pattern](http://bit.ly/riOKGt):
   <script src="https://gist.github.com/1139466.js?file=gistfile1.xml">
   </script>
