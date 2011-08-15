@@ -35,9 +35,12 @@ What is the place of SI in Service Oriented Architecture(SOA)? Tom McCuch explai
 For more information refer to wikipedia[^eai] or SI home page[^si].
 You will find there documentation, reference manual, articles, podcasts and much more.
 
-### Lets take a look on some advantages and disadvantages of the SI.
+Today we have many open source integration platforms on the market e.g., Mule ESB[^muleESB], Camel[^camel], ServiceMIX[^sm], OpenESB[^openESB]. 
+You can find good comparison of the SI alternatives based on the three criteria like "Easy of Use", "Maintainability" and "Extensibility"
+in Pro Spring Inegration[^psi]. 
+SI has great potential and lot to offer. Lets review some advantages and disadvantages.
 
-#### At first advantages:
+#### Advantages:
 
 * __Implements proven patterns__ - The SI team didn’t invent the wheel again. The whole architecture 
 and solutions in SI are based on Enterprise Integration Patterns[^eip]. 
@@ -59,7 +62,7 @@ and solutions in SI are based on Enterprise Integration Patterns[^eip].
 
 * __Documentation__ - SI has good documentation with practical examples that will help 
 you understand channels, adapters, routers etc. You can find also very good books 
-about SI e.g., [“Pro Spring Integration”](http://bit.ly/pu2ul4) from Apress. It covers contemporary technologies 
+about SI e.g., Pro Spring Integration[^psi] from Apress. It covers contemporary technologies 
 and real-world examples, facing the real problems. Another important thing is community 
 which is really helpful and eager to solve your problems fast.
 
@@ -110,7 +113,7 @@ powerful technology build on the proven platform which you can use to model ESB 
 
 Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http://bit.ly/p6DPTP) project.
 
-Any comments? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
+Any comments? Have more advantages or disadvatages? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
 
 [^eai]: [http://en.wikipedia.org/wiki/Enterprise_application_integration](http://en.wikipedia.org/wiki/Enterprise_application_integration)
 
@@ -129,3 +132,11 @@ Any comments? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
 [^tmc]: [http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115](http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115)
 
 [^dsl]: [https://github.com/SpringSource/spring-integration-scala](https://github.com/SpringSource/spring-integration-scala)
+
+[^muleESB]: [http://www.mulesoft.org/](http://www.mulesoft.org/)
+
+[^camel]: [http://camel.apache.org/](http://camel.apache.org/)
+
+[^sm]: [http://servicemix.apache.org/](http://servicemix.apache.org/)
+
+[^openESB]: [http://openesb-dev.org/](http://openesb-dev.org/)
