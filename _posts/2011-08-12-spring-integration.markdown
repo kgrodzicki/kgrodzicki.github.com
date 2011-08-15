@@ -16,14 +16,14 @@ automate business process without requiring comprehensive changes in existing ap
 * _EIP_ is set of integration patterns. EIP helps developers and architects describe and develop robust integration solutions[^eip].
 
 For those new to SI, definition from project home page[^si]:
-> "_Spring Integration_ provides an extension of the Spring programming model to support the well-known Enterprise 
-> Integration Patterns. It enables lightweight messaging within Spring-based applications and supports integration 
-> with external systems via declarative adapters. Those adapters provide a higher-level of abstraction over Spring's 
-> support for remoting, messaging, and scheduling. Spring Integration's primary goal is to provide a simple model 
-> for building enterprise integration solutions while maintaining the separation of concerns that is 
-> essential for producing maintainable, testable code."
+> _"Spring Integration provides an extension of the Spring programming model to support the well-known Enterprise_
+> _Integration Patterns. It enables lightweight messaging within Spring-based applications and supports integration_
+> _with external systems via declarative adapters. Those adapters provide a higher-level of abstraction over Spring's_
+> _support for remoting, messaging, and scheduling. Spring Integration's primary goal is to provide a simple model_
+> _for building enterprise integration solutions while maintaining the separation of concerns that is_
+> _essential for producing maintainable, testable code."_
 
-What is the place of SI in Service Orineted Architecture(SOA)? Tom McCuch explains this in one of his comment[^tmc]:
+What is the place of SI in Service Oriented Architecture(SOA)? Tom McCuch explains this in one of his comment[^tmc]:
 > _"SOA is an architectural pattern. A pattern, by definition, is the encapsulation_
 > _of a complex system into a reusable component. Patterns are meant to describe_
 > _"building blocks" for YOUR solution - they are not meant to be solutions in of_
