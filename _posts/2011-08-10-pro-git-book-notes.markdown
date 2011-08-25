@@ -73,6 +73,10 @@ git log
 
 `git log --pretty=format:"%h %s" --graph` - format the log and show the graph
 
+`git log -p filename` - change history of a file. 
+
+`gitk filename` - as before.
+
 ### More options for `git log`:
 
 - `-p` Show the patch introduced with each commit.
