@@ -41,7 +41,7 @@ git rm
 
 git mv
 ------
-`git mv file_from file_to` - move the file.
+`git mv file_from file_to` - move/rename the file.
 
 git log
 -------
