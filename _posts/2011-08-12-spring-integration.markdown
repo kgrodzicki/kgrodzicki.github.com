@@ -35,9 +35,9 @@ What is the place of SI in Service Oriented Architecture(SOA)? Tom McCuch explai
 For more information refer to wikipedia[^eai] or SI home page[^si].
 You will find there documentation, reference manual, articles, podcasts and much more.
 
-Today we have many open source integration platforms on the market e.g., Mule ESB[^muleESB], Camel[^camel], ServiceMIX[^sm], OpenESB[^openESB]. 
+Nowadays there are many open source integration platforms on the market e.g., Mule ESB[^muleESB], Camel[^camel], ServiceMIX[^sm], OpenESB[^openESB], JbossESB[^jbossESB].
 You can find good comparison of the SI alternatives based on the three criteria like "Easy of Use", "Maintainability" and "Extensibility"
-in Pro Spring Inegration[^psi]. 
+in _Pro Spring Inegration_[^psi]. 
 SI has great potential and lot to offer. Lets review some advantages and disadvantages.
 
 #### Advantages:
@@ -66,12 +66,16 @@ about SI e.g., Pro Spring Integration[^psi] from Apress. It covers contemporary 
 and real-world examples, facing the real problems. Another important thing is community 
 which is really helpful and eager to solve your problems fast.
 
-* __Low Coupling - channel as a first class citizen__ - 
+* __Low Coupling - channel as a first class citizen__ -
+One of the biggest SOA principles is loose-coupling. With SI you can build flexible, configurable architecture.
 By Oleg Zhurakousky: 
 > _"In SI we have Channel as a first class citizen. In all other frameworks it is mentioned only as an internal implementation not exposed to the end-user._
->  * _Channels is what enforces the decoupling between producers and consumers._
->  * _Channels is what's allowing us to manage message-exchange protocols. From throttling to parallelism all is accomplished via channels._
->  * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
+
+>    * _Channels is what enforces the decoupling between producers and consumers._
+
+>    * _Channels is what's allowing us to manage message-exchange protocols. From throttling to parallelism all is accomplished via channels._
+
+>    * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
 
 * __Model complex solutions__ - using SI you are able to model complex solutions using various technologies 
 like EJB, RMI, AMQP etc. in one place[^dsblog].
@@ -140,3 +144,5 @@ Any comments? Have more advantages or disadvatages? Let me know on Twitter [@kgr
 [^sm]: [http://servicemix.apache.org/](http://servicemix.apache.org/)
 
 [^openESB]: [http://openesb-dev.org/](http://openesb-dev.org/)
+
+[^jbossESB]: [http://www.jboss.org/jbossesb/](http://www.jboss.org/jbossesb/)
