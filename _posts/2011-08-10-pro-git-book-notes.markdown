@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 12 Aug 2011
+updated: 31 Aug 2011
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -41,7 +41,7 @@ git rm
 
 git mv
 ------
-`git mv file_from file_to` - move the file.
+`git mv file_from file_to` - move/rename the file.
 
 git log
 -------
@@ -72,6 +72,10 @@ git log
 - `%s` Subject
 
 `git log --pretty=format:"%h %s" --graph` - format the log and show the graph
+
+`git log -p filename` - change history of a file. 
+
+`gitk filename` - as before.
 
 ### More options for `git log`:
 

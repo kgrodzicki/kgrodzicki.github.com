@@ -2,15 +2,29 @@
 layout: default
 title: Spring Integration as building block for SOA
 categories: soa
+published: false
 type: blog
 ---
 
 This is a short review of the Spring Integration Framework(SI)[^si]. 
-To understand this article you should be familiar with Enterprise Application Integration(EAI). 
-If you are not please refer to wikipedia[^eai] or SI home page[^si]. 
-You will find there documentation, reference manual, articles, podcasts and much more.
+To understand this article you should be familiar with Enterprise Application Integration(EAI) and have
+basic understanding of Enterprise Integration Patterns(EIP)[^eip].
+For those new to EAI or EIP:
 
-What is the place of SI in SOA? Tom McCuch explains this in one of his comment[^tmc]:
+* _EAI_ is an architectural approach for integrate data, services across the enterprise. EAI simplify and
+automate business process without requiring comprehensive changes in existing applications and data structures[^psi].
+
+* _EIP_ is set of integration patterns. EIP helps developers and architects describe and develop robust integration solutions[^eip].
+
+For those new to SI, definition from project home page[^si]:
+> _"Spring Integration provides an extension of the Spring programming model to support the well-known Enterprise_
+> _Integration Patterns. It enables lightweight messaging within Spring-based applications and supports integration_
+> _with external systems via declarative adapters. Those adapters provide a higher-level of abstraction over Spring's_
+> _support for remoting, messaging, and scheduling. Spring Integration's primary goal is to provide a simple model_
+> _for building enterprise integration solutions while maintaining the separation of concerns that is_
+> _essential for producing maintainable, testable code."_
+
+What is the place of SI in Service Oriented Architecture(SOA)? Tom McCuch explains this in one of his comment[^tmc]:
 > _"SOA is an architectural pattern. A pattern, by definition, is the encapsulation_
 > _of a complex system into a reusable component. Patterns are meant to describe_
 > _"building blocks" for YOUR solution - they are not meant to be solutions in of_
@@ -19,12 +33,18 @@ What is the place of SI in SOA? Tom McCuch explains this in one of his comment[^
 > _shelf products that aim to control it. This is where the big vendors have all gone wrong with_
 > _SOA - and where SpringSource, yet again, has gotten it right with Spring Integration."_
 
-### Lets take a look on some advantages and disadvantages of the SI.
+For more information refer to wikipedia[^eai] or SI home page[^si].
+You will find there documentation, reference manual, articles, podcasts and much more.
 
-#### At first advantages:
+Nowadays there are many open source integration platforms on the market e.g., Mule ESB[^muleESB], Camel[^camel], ServiceMIX[^sm], OpenESB[^openESB], JbossESB[^jbossESB].
+You can find good comparison of the SI alternatives based on the three criteria like "Easy of Use", "Maintainability" and "Extensibility"
+in _Pro Spring Inegration_[^psi]. 
+SI has great potential and lot to offer. Lets review some advantages and disadvantages.
+
+#### Advantages:
 
 * __Implements proven patterns__ - The SI team didn’t invent the wheel again. The whole architecture 
-and solutions in SI are based on well-known Enterprise Integration Patterns[^eip]. 
+and solutions in SI are based on Enterprise Integration Patterns[^eip]. 
   For example [Service Activator pattern](http://bit.ly/riOKGt):
   <script src="https://gist.github.com/1139466.js?file=gistfile1.xml">
   </script>
@@ -43,16 +63,20 @@ and solutions in SI are based on well-known Enterprise Integration Patterns[^eip
 
 * __Documentation__ - SI has good documentation with practical examples that will help 
 you understand channels, adapters, routers etc. You can find also very good books 
-about SI e.g., [“Pro Spring Integration”](http://bit.ly/pu2ul4) from Apress. It covers contemporary technologies 
+about SI e.g., Pro Spring Integration[^psi] from Apress. It covers contemporary technologies 
 and real-world examples, facing the real problems. Another important thing is community 
 which is really helpful and eager to solve your problems fast.
 
-* __Low Coupling - channel as a first class citizen__ - 
+* __Low Coupling - channel as a first class citizen__ -
+One of the biggest SOA principles is loose-coupling. With SI you can build flexible, configurable architecture.
 By Oleg Zhurakousky: 
 > _"In SI we have Channel as a first class citizen. In all other frameworks it is mentioned only as an internal implementation not exposed to the end-user._
->  * _Channels is what enforces the decoupling between producers and consumers._
->  * _Channels is what's allowing us to manage message-exchange protocols. From throttling to parallelism all is accomplished via channels._
->  * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
+
+>    * _Channels is what enforces the decoupling between producers and consumers._
+
+>    * _Channels is what's allowing us to manage message-exchange protocols. From throttling to parallelism all is accomplished via channels._
+
+>    * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
 
 * __Model complex solutions__ - using SI you are able to model complex solutions using various technologies 
 like EJB, RMI, AMQP etc. in one place[^dsblog].
@@ -86,16 +110,15 @@ Mark Fisher about GUI designer:
 
 #### Disadvantages:
 * __New technology__ - tree years on the market might not be enough for the bigger companies.
-* __Missing adapters__ like ssh, shttp. Lack of the many adapters comparing to e.g., [MuleESB](http://bit.ly/ohrEq4). Always you can i
+* __Missing adapters__ like ssh, shttp. Lack of the many adapters comparing to e.g., [MuleESB](http://bit.ly/ohrEq4). Always you can
 fill JIRA for SI if you see some functionality which is crucial for you and can be used by community.
 
-Is the Spring Integration framework for you?
-You have to answer this question by yourself. SI is lightweight, 
+Is the SI framework for you? If you are familiar with Spring idioms and looking for more natural way to build event-driven applications SI is lightweight,
 powerful technology build on the proven platform which you can use to model ESB which fits your needs.
 
 Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http://bit.ly/p6DPTP) project.
 
-Any comments? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
+Any comments? Have more advantages or disadvatages? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
 
 [^eai]: [http://en.wikipedia.org/wiki/Enterprise_application_integration](http://en.wikipedia.org/wiki/Enterprise_application_integration)
 
@@ -114,3 +137,13 @@ Any comments? Let me know on Twitter [@kgrodzicki](http://bit.ly/t-kgrodzicki).
 [^tmc]: [http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115](http://www.infoq.com/articles/Spring-Integration-Joshua-Long#view_38115)
 
 [^dsl]: [https://github.com/SpringSource/spring-integration-scala](https://github.com/SpringSource/spring-integration-scala)
+
+[^muleESB]: [http://www.mulesoft.org/](http://www.mulesoft.org/)
+
+[^camel]: [http://camel.apache.org/](http://camel.apache.org/)
+
+[^sm]: [http://servicemix.apache.org/](http://servicemix.apache.org/)
+
+[^openESB]: [http://openesb-dev.org/](http://openesb-dev.org/)
+
+[^jbossESB]: [http://www.jboss.org/jbossesb/](http://www.jboss.org/jbossesb/)
