@@ -2,6 +2,7 @@
 layout: default
 title: Spring Integration as building block for SOA
 categories: soa
+published: false
 type: blog
 ---
 
