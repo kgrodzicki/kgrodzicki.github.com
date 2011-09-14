@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 31 Aug 2011
+updated: 13 Sep 2011
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
