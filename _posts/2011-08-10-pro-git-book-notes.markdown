@@ -146,6 +146,8 @@ git branch
 
 `git branch -d newTest` - delete branch `newTest`.
 
+`git push origin :newTest` - delete remote branch.
+
 `git branch --merged` - show all branches that are already merged into the current branch.
 
 `git branch --no-merged` - show all branches that contains work you haven't yet merged.
