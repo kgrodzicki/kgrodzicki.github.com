@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 31 Aug 2011
+updated: 13 Sep 2011
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -145,6 +145,8 @@ git branch
 `git branch newTest` - create new `newTest` branch.
 
 `git branch -d newTest` - delete branch `newTest`.
+
+`git push origin :newTest` - delete remote branch.
 
 `git branch --merged` - show all branches that are already merged into the current branch.
 
