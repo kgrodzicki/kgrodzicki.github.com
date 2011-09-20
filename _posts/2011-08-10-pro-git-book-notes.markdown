@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 13 Sep 2011
+updated: 19 Sep 2011
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -23,9 +23,11 @@ git reset
 
 git push
 --------
-`git push origin` - push to `origin` repository.
+`git push <remote> <branch>` - push to `<remote> <branch>` repository.
 
-`git push origin --tags` - push to `origin` including all tags.
+`git push <remote> <branch> --tags` - push to `<remote> <branch>` including all tags.
+
+`git push -u <remote> <branch>` - push to `<remote> <branch>` repository and set up tracking (for "git pull" etc.) automatically.
 
 git diff
 --------
