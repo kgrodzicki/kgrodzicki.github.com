@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Spring Integration as building block for SOA
-categories: soa
-published: false
+title: Lightweight integration with Spring Integration
+categories: eai
+published: true
 type: blog
 ---
 
@@ -70,13 +70,14 @@ which is really helpful and eager to solve your problems fast.
 * __Low Coupling - channel as a first class citizen__ -
 One of the biggest SOA principles is loose-coupling. With SI you can build flexible, configurable architecture.
 By Oleg Zhurakousky: 
-> _"In SI we have Channel as a first class citizen. In all other frameworks it is mentioned only as an internal implementation not exposed to the end-user._
+ 
+  _"In SI we have Channel as a first class citizen. In all other frameworks it is mentioned only as an internal implementation not exposed to the end-user._
 
->    * _Channels is what enforces the decoupling between producers and consumers._
+  * _Channels is what enforces the decoupling between producers and consumers._
 
->    * _Channels is what's allowing us to manage message-exchange protocols. From throttling to parallelism all is accomplished via channels._
+  * _Channels is what's allowing us to manage message-exchange protocols. From throttling to parallelism all is accomplished via channels._
 
->    * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
+  * _Channels gives end-user transparency with regard to how these message-exchange protocols are applied. Change the type of a channel without any producer/consumer awareness."_
 
 * __Model complex solutions__ - using SI you are able to model complex solutions using various technologies 
 like EJB, RMI, AMQP etc. in one place[^dsblog].
@@ -108,13 +109,18 @@ Mark Fisher about GUI designer:
     <script src="https://gist.github.com/1141786.js?file=DslDemo.scala">
     </script>
 
+  __Cloud deployment__ - For more details refer to "The cloud Future of Integration"[^tcfoi]. This i great presentation from JavaZone 2011 by Mark Fisher.
+
 #### Disadvantages:
 * __New technology__ - tree years on the market might not be enough for the bigger companies.
+
 * __Missing adapters__ like ssh, shttp. Lack of the many adapters comparing to e.g., [MuleESB](http://bit.ly/ohrEq4). Always you can
 fill JIRA for SI if you see some functionality which is crucial for you and can be used by community.
 
 Is the SI framework for you? If you are familiar with Spring idioms and looking for more natural way to build event-driven applications SI is lightweight,
 powerful technology build on the proven platform which you can use to model ESB which fits your needs.
+
+To get inspired check out presentation about transformation from WebLogic to lightweight SEDA architecture in Oslo kommune - "SOA uten ESB"[^soauesb](in Norwegian).
 
 Gists are from [https://github.com/kgrodzicki/spring-integration-samples](http://bit.ly/p6DPTP) project.
 
@@ -147,3 +153,7 @@ Any comments? Have more advantages or disadvatages? Let me know on Twitter [@kgr
 [^openESB]: [http://openesb-dev.org/](http://openesb-dev.org/)
 
 [^jbossESB]: [http://www.jboss.org/jbossesb/](http://www.jboss.org/jbossesb/)
+
+[^soauesb]: [http://vimeo.com/28759841](http://vimeo.com/28759841)
+
+[^tcfoi]: [http://vimeo.com/28795501](http://vimeo.com/28795501)
