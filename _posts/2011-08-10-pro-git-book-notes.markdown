@@ -168,3 +168,17 @@ git merge
 `git merge --no-off test` - almost the same as command above, but with `--no-ff` generate a merge commit even if the merge resolved as a `fast-forward`.
 
 `git mergetool` - run merge conflict resolution tools to resolve merge conflicts.
+
+git stash
+---------
+`git stash` - push a ner stash onto your stack.
+
+`git stash list` - list stashes.
+
+`git stash apply` - apply last stash.
+
+`git stash apply <stash-name>` - apply stash with name `<stash-name>`
+
+`git stash show -p stash@{0} | git apply -R` - unapply stashed changes.
+
+`git stash branch testchanges` - create branch from stash.
