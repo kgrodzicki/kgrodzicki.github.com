@@ -154,6 +154,8 @@ git branch
 
 `git branch --no-merged` - show all branches that contains work you haven't yet merged.
 
+`git branch -m oldName newName` - rename branch.
+
 git checkout
 ------------
 `git checkout newTest` - change the current branch to `newTest`.
