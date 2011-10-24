@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 22 Sep 2011
+updated: 24 Oct 2011
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -120,6 +120,8 @@ git remote
 `git remote rename test newName` - rename the remote repository.
 
 `git remote rm test` - remove remote repository.
+
+`git remote show origin` - inspect a remote branch.
 
 git fetch
 ---------
