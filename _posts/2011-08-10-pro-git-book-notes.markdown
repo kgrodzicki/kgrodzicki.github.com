@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 24 Oct 2011
+updated: 13 Mar 2012
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -20,6 +20,10 @@ git reset
 `git reset HEAD^1` - unstage last commit.
 
 `git reset --hard master` - reset your branch to where `master` is now.
+
+git pull
+--------
+`git pull --rebase` - pull changes and rebase.
 
 git push
 --------
@@ -76,6 +80,8 @@ git log
 `git log --pretty=format:"%h %s" --graph` - format the log and show the graph
 
 `git log -p filename` - change history of a file. 
+
+`git log --all --grep='ala ma kota'` - list commits that contain a given text.
 
 `gitk filename` - as before.
 
@@ -186,3 +192,7 @@ git stash
 `git stash show -p stash@{0} | git apply -R` - unapply stashed changes.
 
 `git stash branch testchanges` - create branch from stash.
+
+git rebase
+----------
+`git rebase -i HEAD^5` - interactive rebase.
