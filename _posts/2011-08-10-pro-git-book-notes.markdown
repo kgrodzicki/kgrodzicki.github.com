@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 13 Mar 2012
+updated: 22 Mar 2012
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -196,3 +196,8 @@ git stash
 git rebase
 ----------
 `git rebase -i HEAD^5` - interactive rebase.
+
+git blame
+---------
+
+`git blame filename` - discover why and when a certain line was added.
