@@ -186,3 +186,8 @@ git stash
 `git stash show -p stash@{0} | git apply -R` - unapply stashed changes.
 
 `git stash branch testchanges` - create branch from stash.
+
+git blame
+---------
+
+`git blame filename` - discover why and when a certain line was added.
