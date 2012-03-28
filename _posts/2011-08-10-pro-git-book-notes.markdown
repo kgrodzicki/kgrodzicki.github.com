@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 22 Mar 2012
+updated: 28 Mar 2012
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -201,3 +201,11 @@ git blame
 ---------
 
 `git blame filename` - discover why and when a certain line was added.
+
+Aliases
+-------
+Pretty git branch graphs
+
+lg1 = `log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(bold white)— %cn%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative`
+
+lg2 = `log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%cD%C(reset) %C(bold green)(%cr)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %cn%C(reset)' --abbrev-commit`
