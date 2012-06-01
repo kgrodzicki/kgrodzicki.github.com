@@ -202,6 +202,20 @@ git blame
 
 `git blame filename` - discover why and when a certain line was added.
 
+git reflog
+----------
+
+`git reflog` - list branch history.
+
+`git checkout aaaaa` - switch to correct branch
+
+`git reset --hard 33aa59` - hard reset.
+
+git archive
+-----------
+
+`git archive master | bzip2 > archive.tar.bz2` - export master branch from git and remove git configuration from it.
+
 Aliases
 -------
 Pretty git branch graphs
