@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 30 May 2012
+updated: 7 June 2012
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -215,6 +215,13 @@ git archive
 -----------
 
 `git archive master | bzip2 > archive.tar.bz2` - export master branch from git and remove git configuration from it.
+
+git config
+----------
+
+`git config --get gc.auto` - check configuration for gc.auto.
+
+`git config --global gc.auto 1` - run automatically git gc.
 
 Aliases
 -------
