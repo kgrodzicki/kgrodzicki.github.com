@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 7 June 2012
+updated: 18 June 2012
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -222,6 +222,10 @@ git config
 `git config --get gc.auto` - check configuration for gc.auto.
 
 `git config --global gc.auto 1` - run automatically git gc.
+
+git clean
+---------
+`git clean -xdf` - removing files that are not under version control.
 
 Aliases
 -------
