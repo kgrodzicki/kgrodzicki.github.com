@@ -3,7 +3,7 @@ layout: default
 title: Pro Git Notes
 categories: git
 type: blog
-updated: 18 June 2012
+updated: 21 June 2012
 ---
 
 Notes from ['Pro Git'](http://bit.ly/nXGq5j) book.
@@ -149,6 +149,10 @@ git tag
 `git tag -v v1.4.2.1` - verify the `v1.4.2.1` tag.
 
 `git tag -a v1.2 checksum` - create the tag for specific commit.
+
+`git tag -d v1` - delete tag v1 from local repository.
+
+`git push origin :refs/tags/v1` - delete tag v1 from local remote repository.
 
 git branch
 ----------
