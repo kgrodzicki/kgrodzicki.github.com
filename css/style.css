@@ -52,3 +52,7 @@ body {
     margin: 15px 0px;
     background-color: #eee;
 }
+img {
+    margin-bottom: 1em;
+    border: 1px solid #aaa;
+}
