@@ -152,7 +152,7 @@ git tag
 
 `git tag -d v1` - delete tag v1 from local repository.
 
-`git push origin :refs/tags/v1` - delete tag v1 from local remote repository.
+`git push origin :refs/tags/v1` - delete tag v1 from remote repository.
 
 git branch
 ----------
