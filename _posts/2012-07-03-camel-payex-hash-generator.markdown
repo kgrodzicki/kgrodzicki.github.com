@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PayEx hexadecimal md5 hash generator as content enricher component using Apache Camel
+title: PayEx hexadecimal md5 hash generator as a content enricher component using Apache Camel
 categories: eai, apache camel
 published: true
 type: blog
